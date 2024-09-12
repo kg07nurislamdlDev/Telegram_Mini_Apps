@@ -10,20 +10,37 @@
     <header>
         <h1>Mini App Store</h1>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#applications">Applications</a></li>
+        </ul>
+    </nav>
     <main>
-        <section class="app-list">
+        <section id="games" class="app-category">
+            <h2>Games</h2>
             <div class="app-item">
-                <h2>App Name</h2>
-                <p>App description goes here.</p>
-                <button onclick="openApp()">Open App</button>
+                <h3>Game Name</h3>
+                <p>Game description goes here.</p>
+                <button onclick="openApp('https://example.com/game')">Open Game</button>
             </div>
-            <!-- More app items -->
+            <!-- More game items -->
+        </section>
+        <section id="applications" class="app-category">
+            <h2>Applications</h2>
+            <div class="app-item">
+                <h3>App Name</h3>
+                <p>App description goes here.</p>
+                <button onclick="openApp('https://example.com/app')">Open App</button>
+            </div>
+            <!-- More application items -->
         </section>
     </main>
     <script>
-        function openApp() {
-            window.open('https://example.com', '_blank');
+        function openApp(url) {
+            window.open(url, '_blank');
         }
     </script>
 </body>
 </html>
+
