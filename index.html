@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini App Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mini App Store</h1>
+    </header>
+    <main>
+        <section class="app-list">
+            <div class="app-item">
+                <h2>App Name</h2>
+                <p>App description goes here.</p>
+                <button onclick="openApp()">Open App</button>
+            </div>
+            <!-- More app items -->
+        </section>
+    </main>
+    <script>
+        function openApp() {
+            window.open('https://example.com', '_blank');
+        }
+    </script>
+</body>
+</html>
