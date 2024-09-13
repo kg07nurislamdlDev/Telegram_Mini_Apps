@@ -3,59 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini App Store</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mobile App Interface</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Mini App Store</h1>
+        <input type="text" placeholder="Search">
     </header>
-    <nav>
-        <ul>
-            <li><a href="#games">Games</a></li>
-            <li><a href="#applications">Applications</a></li>
-        </ul>
-    </nav>
     <main>
-        <section id="games" class="app-category">
-            <h2>Games</h2>
-            <div class="app-item">
-                <h3>Game Name</h3>
-                <p>Game description goes here.</p>
-                <button onclick="openApp('https://example.com/game')">Open Game</button>
-            </div>
-            <!-- More game items -->
-        </section>
-        <section id="applications" class="app-category">
-            <h2>Applications</h2>
-            <div class="app-item">
+        <section id="advertising">
+            <h2>Advertising</h2>
+            <div class="app">
                 <h3>App Name</h3>
-                <p>App description goes here.</p>
-                <button onclick="openApp('https://example.com/app')">Open App</button>
+                <p>Here is the description of the app. Brief explanatory text.</p>
+                <button>Open App</button>
             </div>
-            <!-- More application items -->
+        </section>
+        <section id="games">
+            <h2>Games</h2>
+            <div class="game">
+                <h3>Game Name</h3>
+                <p>Here is the description of the app. Brief explanatory text.</p>
+                <button>Open</button>
+                <button>Channel</button>
+            </div>
+            <div class="game">
+                <h3>Game Name</h3>
+                <p>Here is the description of the app. Brief explanatory text.</p>
+                <button>Open</button>
+                <button>Channel</button>
+            </div>
+            <div class="game">
+                <h3>Game Name</h3>
+                <p>Here is the description of the app. Brief explanatory text.</p>
+                <button>Open</button>
+                <button>Channel</button>
+            </div>
         </section>
     </main>
-    <script>
-        function openApp(url) {
-            window.open(url, '_blank');
-        }
-
-        const { Telegraf } = require('telegraf');
-const bot = new Telegraf('7277101188:AAHki3jY1q6oXIMaIekdtUvOTOcgpP20RH0');
-
-bot.start((ctx) => {
-    ctx.reply('Welcome to Mini App Store! Click the button below to view apps.', {
-        reply_markup: {
-            inline_keyboard: [
-                [{ text: 'View Apps', web_app: { url: 'https://kg07nurislamdldev.github.io/Telegram_Mini_Apps' } }]
-            ]
-        }
-    });
-});
-
-bot.launch();
-    </script>
 </body>
 </html>
-
