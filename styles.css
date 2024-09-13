@@ -1,48 +1,50 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(#74D1EE 1%, #7498EE, #7474EE, #774EE3, #2A31FF 90%);
 }
 
 header {
-    background-color: #f8f8f8;
-    padding: 10px;
-    text-align: center;
+  background-color: #74D1EE 1%;
+  padding: 10px;
+  text-align: center;
 }
 
 header input[type="text"] {
-    width: 80%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 section {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.app, .game {
-    background-color: #f1f1f1;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+.ads,
+.game {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
