@@ -1,5 +1,6 @@
 .ads {
   height: 100px;
+  transform: translate(0 -10px);
 }
 
 .ads > img {
