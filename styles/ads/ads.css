@@ -1,0 +1,20 @@
+.ads {
+  height: 100px;
+}
+
+.ads > img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.app-name {
+  margin: 0;
+}
+
+.ads > p {
+  margin: 7px;
+  font-size: 10px;
+}
